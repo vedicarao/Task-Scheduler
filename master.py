@@ -76,7 +76,7 @@ def rand_algo():
 def rr_algo(wlist_rr):
 	while(1):
 		for worker in wlist_rr:
-			if check_ports(worker):
+			if check_ports(worker)>0:
 				wlist_rr.append(wlist_rr.pop(0))
 				return worker
 	
