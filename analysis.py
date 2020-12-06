@@ -169,8 +169,8 @@ if part == '2':
 	y3 = workers[2][1]
 	plt.plot(x3, y3, label = "worker 3")
 	plt.xlabel('time(in seconds)')
-	plt.ylabel('Number of tasks in execution pool')
-	plt.title('Number of tasks in the execution pool per worker in time: ')
+	plt.ylabel('Number of tasks scheduled')
+	plt.title('Number of tasks scheduled per worker in time ')
 	plt.legend()
 	plt.show()
 		
