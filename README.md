@@ -1,6 +1,5 @@
 # BD_Project
-Implements simulation of a scheduling framework  
-Link to report-  
+Implements simulation of a scheduling framework    
 
 To run project-  
 Run in separate terminals  
