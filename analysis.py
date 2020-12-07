@@ -101,8 +101,8 @@ def analysis_part_2(file):
 				
 	
 	
-	worker3[0]=[(ele-worker1[0][0]).total_seconds() for ele in worker3[0]]
-	worker2[0]=[(ele-worker1[0][0]).total_seconds() for ele in worker2[0]]
+	worker3[0]=[(ele-worker3[0][0]).total_seconds() for ele in worker3[0]]
+	worker2[0]=[(ele-worker2[0][0]).total_seconds() for ele in worker2[0]]
 	
 	worker1[0]=[(ele-worker1[0][0]).total_seconds() for ele in worker1[0]]
 	
