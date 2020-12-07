@@ -80,7 +80,7 @@ def rr_algo(wlist_rr):
 			if check_ports(worker)>0:
 				for i in range(count):
 					wlist_rr.append(wlist_rr.pop(0))
-					return worker
+				return worker
 	
 		
 def ll_algo():
