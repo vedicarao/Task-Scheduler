@@ -73,11 +73,14 @@ def rand_algo():
 	
 
 def rr_algo(wlist_rr):
+	count=0
 	while(1):
+		count=count+1
 		for worker in wlist_rr:
 			if check_ports(worker)>0:
-				wlist_rr.append(wlist_rr.pop(0))
-				return worker
+				for i in range(count):
+					wlist_rr.append(wlist_rr.pop(0))
+					return worker
 	
 		
 def ll_algo():
