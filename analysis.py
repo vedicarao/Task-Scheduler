@@ -102,7 +102,7 @@ else:
 		
 if part == '1':
 	JOBS_RANDOM=analysis_part_1('jobs.log')
-	TASKS_RANDOM=analysis_part_1('tasks_1.log')+ analysis_part_1('tasks_1.log')+ analysis_part_1('tasks_1.log')
+	TASKS_RANDOM=analysis_part_1('tasks_1.log')+ analysis_part_1('tasks_2.log')+ analysis_part_1('tasks_3.log')
 	print(JOBS_RANDOM)
 	print(TASKS_RANDOM)
 
