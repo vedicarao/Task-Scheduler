@@ -12,7 +12,7 @@ python3 requests.py n
 The terminal running master.py displays the tasks scheduled and the tasks completed along with worker_id  
 The terminals running worker.py displays the tasks they are scheduled as they are completed.  
 
-On running this setup 2 logfiles are generated- jobs.log and tasks.log, with the jobs and tasks logged with their start and end times respectively.  
+On running this setup logfiles are generated- jobs.log and tasks_1.log, tasks_2.log, and tasks_3.log with the jobs and tasks logged with their start and end times respectively.  
 'jobs' indicating job start  
 'jobf' indicating job finish  
 'tasks' indicating task start  
