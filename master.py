@@ -186,7 +186,6 @@ def map_red_dep():
 						lock3.acquire()
 								
 						if job_id in d.keys():
-							d[job_id]['unassigned_reducer'].remove(message)
 							if d[job_id]['reducer'][0]==0:
 								d[job_id]['reducer'].pop(0)
 								d[job_id]['reducer'].append(message)
