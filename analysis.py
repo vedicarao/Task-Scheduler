@@ -61,21 +61,12 @@ def analysis_part_2(file):
 	logs = open(file,"r")
 	logs=logs.readlines()
 	
-	worker=dict()
 	worker = [[],[]]
 	count=0
 	for line in logs:
 		date, time, word, task, wid = line.split()
 		date_time=date+' '+time
-		time=datetime.strptime(date_time, "%Y-%m-%d %H:%M:%S,%f")
-		'''
-		if word == 'tasks':
-			count=count+1
-			worker[time]=count
-		if word == 'taskf':
-			count=count-1
-			worker[time]=count
-		'''	
+		time=datetime.strptime(date_time, "%Y-%m-%d %H:%M:%S,%f")	
 		worker[0].append(time)
 		if word == 'tasks':
 			count=count+1
@@ -138,12 +129,6 @@ if part == '2':
 	worker1=analysis_part_2("tasks_1.log")
 	worker2=analysis_part_2("tasks_2.log")
 	worker3=analysis_part_2("tasks_3.log")
-	'''
-	worker={**worker1, **worker2, **worker3}
-	worker_new={key: value for key, value in sorted(worker.items(), key=lambda item: item[0])}
-
-	worker_times={key-worker.items[0][0], value for key, value in worker_new}
-	'''
 	
 	
 	min_time=min(worker1[0][0],worker2[0][0],worker3[0][0])
