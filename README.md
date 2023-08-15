@@ -1,4 +1,4 @@
-# BD_Project
+
 Implements simulation of a scheduling framework    
 
 To run project-  
